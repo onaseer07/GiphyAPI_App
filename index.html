@@ -5,7 +5,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
     <!-- jQuery Call-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <!-- Bootstrap Call-->
@@ -16,15 +16,35 @@
 </head>
 <body>
     <!-- Header Starts-->
-    <header>
-        <div class = "jumbotron text-center">
+    <header data-spy="affix" data-offset-top="205">
+        <div class = "text-center">
+           <h1 style = "font-family: 'Rock Salt', cursive;">Actors</h1>
+           <br>
+           <form>
+               <input class = "text-center" type = "text" value = "" placeholder = "Type an actor name." style = "height:50px;color:#1d262e;font-size:15px;border:0px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+               <br>
+               <br>
+               <button class = "text-center" id = "Add" type = "submit" style = "width: auto; height: 50px;border-radius:50%;background-color: #1d262e; color:white;font-size:15px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"><span style = "color:#1d262e;">+ </span>Add<span style = "color:#1d262e;"> +</span> </button>
+           </form>
+        </div>
+        <div class = "col-sm-12 text-center">
+                Click on an actor button below to view GIFs
         </div>
     </header>
     <!-- Header Starts-->
 
     <!-- Main Starts-->
-    <main>
+    <main class = "main" style = "margin:15px;">
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-sm-12 text-center buttons">
+                 <!--<button class = "text-center" style = "border:0px;background-color:#1d262e;color:white;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">actor 2</button>-->    
+                </div>
+                <div class = "col-sm-12 text-center" id = "results" style = "min-height: 200px;margin-top:5px;padding:5px;background-color:#1d262e;color:rgba(255, 255, 255, 0.651);overflow-x: none;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 
+                </div>
+            </div>
+        </div>
     </main>
     <!-- Main Ends-->
 
@@ -36,5 +56,6 @@
 
     <!-- Custom JS-->
     <script src="assets/javascript/app.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </body>
 </html>
