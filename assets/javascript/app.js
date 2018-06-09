@@ -50,7 +50,6 @@ $(document).ready(function(){
                 $(".actorGifs").append(`
                 <div class = "col-lg-6 col-md-6 col-sm-12"><img class = "img-thumbnail gif" src ="${result.data[j].images.fixed_height_still.url}" data-still = "${result.data[j].images.fixed_height_still.url}" data-animate = "${result.data[j].images.fixed_height.url}" data-state = "still" style = "border-radius:0;margin:5px;padding:5px;">
                 <h4>Rating: ${result.data[j].rating.toUpperCase()}<h4>
-                <a href = "${result.data[j].images.fixed_height.url}" download>Download Gif!</a>
                 `);
             };
             $(".gif").on("click", function() {
